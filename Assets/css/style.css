@@ -1,0 +1,166 @@
+:root {
+  --color--bg: #f8ebd3;
+  --color--black: #000000;
+  --color--white: rgb(255, 255, 255);
+  --color--orange: #ffa500;
+  --color--blue: #4877e9;
+  --color--green: #44b096;
+  --font-sans: "Lato", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color--black);
+}
+body {
+  background-color: var(--color--bg);
+  color: var(--color--black);
+  font-family: var(--font-sans);
+}
+.app {
+  padding: 2% 2%;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+ul {
+  display: flex;
+  gap: 15px;
+}
+.logo button {
+  cursor: pointer;
+  position: relative;
+  bottom: 3px;
+  margin-left: 9px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right, #edaf4c, #ec4c6f);
+  padding: 5px;
+  width: 110px;
+  color: var(--color--white);
+  text-align: center;
+}
+.btn {
+  font-weight: 500;
+  color: var(--color--white);
+  border-radius: 6px;
+  padding: 6px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes animation {
+  0% {
+    background-color: var(--color--blue);
+  }
+  40% {
+    background: linear-gradient(to right, #edaf4c, #ec4c6f);
+  }
+  50% {
+    transform: rotate(5deg);
+    background: linear-gradient(to right, #eb2c56, #ffae2c);
+  }
+  70% {
+    background: linear-gradient(to right, #da0836, #ff9d00);
+  }
+  100% {
+    background: linear-gradient(to right, #ec4c6f, #edaf4c);
+    transform: rotate(0deg);
+  }
+}
+.btn-sing {
+  background-color: transparent;
+  text-align: end;
+  color: var(--color--black);
+}
+.btn-join {
+  background-color: var(--color--blue);
+}
+.btn-join:hover {
+  animation: animation 2s infinite;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 0 0;
+  flex-wrap: wrap;
+}
+.text {
+  width: 40%;
+  margin-right: 15%;
+}
+.text h1 {
+  font-size: 60px;
+}
+.text p {
+  margin: 5% 0;
+}
+.text input {
+  height: 40px;
+  width: 380px;
+  border: none;
+  padding-left: 15px;
+  margin: 0 0 20px 0;
+}
+.text form button {
+  background-color: var(--color--blue);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color--white);
+  margin-left: 10px;
+  cursor: pointer;
+}
+.text form button:hover {
+  animation: animation 2s infinite;
+}
+
+.picture {
+  margin: 0 30% 30% 0;
+  position: relative;
+}
+.picture img {
+  height: 400px;
+  position: absolute;
+}
+.picture1 {
+  transform: rotate(-40deg);
+}
+.picture2 {
+  transform: rotate(-25deg);
+}
+.picture4 {
+  transform: rotate(-11deg);
+}
+footer {
+  margin: 110px 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: var(--color--black);
+}
+.avatar {
+  display: flex;
+}
+footer .img-avatar {
+  margin-right: 7px;
+}
+.avatar.text-footer {
+  margin: 5px 10px;
+}
