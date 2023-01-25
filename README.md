@@ -2,7 +2,7 @@
 Host  Wailist
 </h1>
 
-![iffod](https://github.com/joaorezend3/Hosterr-Waitlist-Page-/blob/master/Document.gif)
+![iffod](https://github.com/joaorezend3/Hosterr-Waitlist-Page/blob/master/Document.gif)
 
 ## Objetivo
 
